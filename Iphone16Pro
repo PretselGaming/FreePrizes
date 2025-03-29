@@ -1,0 +1,286 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="WuRjHGpvIbSYifcfCmG26CFAhv151KGvvxmCLPZJs8U">
+    <link rel="shortcut icon" href="https://particles.js.org/tsParticles-64.png">
+    <meta name="description" content="tsParticles - Easily create highly customizable confetti, particles and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno.">
+    <meta name="author" content="Matteo Bruni">
+    <meta name="keywords" content="html css javascript typescript particles js ts jsx tsx canvas confetti fireworks animations react vue angular svelte libraries how to create add">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@HollowMatt_ITA">
+    <meta name="twitter:image:src" content="https://particles.js.org/images/demo2.png">
+
+    <meta property="og:title" content="tsParticles - JavaScript Confetti, Particles and Fireworks animations for your website">
+    <meta property="og:site_name" content="tsParticles">
+    <meta property="og:url" content="https://confetti.js.org/">
+    <meta property="og:description" content="Easily create highly customizable confetti, particles and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno.">
+    <meta property="og:image" content="https://particles.js.org/images/demo2.png">
+
+    <title>
+      tsParticles 🎉🎊 | JavaScript Confetti, Particles and Fireworks animations for
+      your website
+    </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha256-YvdLHPgkqJ8DVUxjjnGVlMMJtNimJ6dYkowFFvp4kKs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202503250101/reactive_library_fy2021.js"></script><script async="" src="https://www.clarity.ms/s/0.8.1/clarity.js"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202503250101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-1784552607103901&amp;plah=confetti.js.org"></script><script async="" src="https://www.clarity.ms/tag/avpy15rmkb"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-6X17TETV56&amp;l=dataLayer&amp;cx=c&amp;gtm=457e53q1za200zb871402136&amp;tag_exp=102482433~102509682~102788824~102803279~102813109~102887800~102926062~102975949"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-221363235-1&amp;l=dataLayer&amp;cx=c&amp;gtm=45je53q1v871402136za200&amp;tag_exp=102482433~102788824~102803279~102813109~102887800~102926062~102976414"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-80MY3TZM79"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-80MY3TZM79");
+    </script>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "avpy15rmkb");
+    </script>
+  <style id="custom-cursor" type="text/css">body button, body [type='button'], body input[type='reset'], body input[type='submit'], body [role="button"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-scrollbar-button, ::-webkit-file-upload-button, [role^=button], .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img,  ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon, body .custom-cursor-on-hover {cursor: url("data:image/png;base64,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") 23 23, pointer !important;} html,body,body select,body .custom-cursor-default-hover {cursor: url("data:image/png;base64,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") 23 23, auto !important;}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+  <body style="padding: 72px 0px 104px;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">tsParticles Confetti</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="ddConfigs" data-bs-toggle="dropdown" aria-expanded="false">Configs</a>
+              <ul class="dropdown-menu" aria-labelledby="ddConfigs">
+                <li>
+                  <a class="dropdown-item active" href="#" id="btnBottomConfetti">Bottom</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnConfettiExplosions">Explosions</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnSideConfetti">Side</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnFallingConfetti">Falling</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnSingleConfetti">Single</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="ddShapes" data-bs-toggle="dropdown" aria-expanded="false">Shapes</a>
+              <ul class="dropdown-menu" aria-labelledby="ddShapes">
+                <li>
+                  <a class="dropdown-item active" href="#" id="btnCircleConfetti">Circle</a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="#" id="btnSquareConfetti">Square</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnTriangleConfetti">Triangle</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnPolygonConfetti">Polygon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnEmojiConfetti">Emoji</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="btnImageConfetti">Image</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="more.html" id="btnBundle">More Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="btnToggleCode">Toggle Code</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="ddSocial" data-bs-toggle="dropdown" aria-expanded="false">Social</a>
+              <ul class="dropdown-menu" aria-labelledby="ddSocial">
+                <li>
+                  <a class="dropdown-item" href="https://github.com/matteobruni/tsparticles" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://twitter.com/tsParticles" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://discord.gg/hACwv45Hme">Discord</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://t.me/tsparticles" target="_blank">Telegram</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.reddit.com/r/tsParticles/" target="_blank">Reddit</a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="https://particles.js.org" target="_blank">Official Website</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="tsparticles"><canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 1 !important; top: 0px !important; left: 0px !important; pointer-events: none;" aria-hidden="true" width="596" height="923"></canvas></div>
+      <div id="code" class="d-none">
+        <pre><code id="code-text" class="language-javascript hljs">tsParticles.<span class="hljs-title function_">load</span>({
+          <span class="hljs-attr">id</span>: <span class="hljs-string">"tsparticles"</span>,
+          <span class="hljs-attr">options</span>: {
+  <span class="hljs-string">"fullScreen"</span>: {
+    <span class="hljs-string">"zIndex"</span>: <span class="hljs-number">1</span>
+  },
+  <span class="hljs-string">"emitters"</span>: {
+    <span class="hljs-string">"position"</span>: {
+      <span class="hljs-string">"x"</span>: <span class="hljs-number">50</span>,
+      <span class="hljs-string">"y"</span>: <span class="hljs-number">100</span>
+    },
+    <span class="hljs-string">"rate"</span>: {
+      <span class="hljs-string">"quantity"</span>: <span class="hljs-number">5</span>,
+      <span class="hljs-string">"delay"</span>: <span class="hljs-number">0.15</span>
+    }
+  },
+  <span class="hljs-string">"particles"</span>: {
+    <span class="hljs-string">"color"</span>: {
+      <span class="hljs-string">"value"</span>: [
+        <span class="hljs-string">"#1E00FF"</span>,
+        <span class="hljs-string">"#FF0061"</span>,
+        <span class="hljs-string">"#E1FF00"</span>,
+        <span class="hljs-string">"#00FF9E"</span>
+      ]
+    },
+    <span class="hljs-string">"move"</span>: {
+      <span class="hljs-string">"decay"</span>: <span class="hljs-number">0.05</span>,
+      <span class="hljs-string">"direction"</span>: <span class="hljs-string">"top"</span>,
+      <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"gravity"</span>: {
+        <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>
+      },
+      <span class="hljs-string">"outModes"</span>: {
+        <span class="hljs-string">"top"</span>: <span class="hljs-string">"none"</span>,
+        <span class="hljs-string">"default"</span>: <span class="hljs-string">"destroy"</span>
+      },
+      <span class="hljs-string">"speed"</span>: {
+        <span class="hljs-string">"min"</span>: <span class="hljs-number">50</span>,
+        <span class="hljs-string">"max"</span>: <span class="hljs-number">100</span>
+      }
+    },
+    <span class="hljs-string">"number"</span>: {
+      <span class="hljs-string">"value"</span>: <span class="hljs-number">0</span>
+    },
+    <span class="hljs-string">"opacity"</span>: {
+      <span class="hljs-string">"value"</span>: <span class="hljs-number">1</span>
+    },
+    <span class="hljs-string">"rotate"</span>: {
+      <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"min"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"max"</span>: <span class="hljs-number">360</span>
+      },
+      <span class="hljs-string">"direction"</span>: <span class="hljs-string">"random"</span>,
+      <span class="hljs-string">"animation"</span>: {
+        <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">"speed"</span>: <span class="hljs-number">30</span>
+      }
+    },
+    <span class="hljs-string">"tilt"</span>: {
+      <span class="hljs-string">"direction"</span>: <span class="hljs-string">"random"</span>,
+      <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"value"</span>: {
+        <span class="hljs-string">"min"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"max"</span>: <span class="hljs-number">360</span>
+      },
+      <span class="hljs-string">"animation"</span>: {
+        <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">"speed"</span>: <span class="hljs-number">30</span>
+      }
+    },
+    <span class="hljs-string">"size"</span>: {
+      <span class="hljs-string">"value"</span>: <span class="hljs-number">3</span>,
+      <span class="hljs-string">"animation"</span>: {
+        <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">"startValue"</span>: <span class="hljs-string">"min"</span>,
+        <span class="hljs-string">"count"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"speed"</span>: <span class="hljs-number">16</span>,
+        <span class="hljs-string">"sync"</span>: <span class="hljs-literal">true</span>
+      }
+    },
+    <span class="hljs-string">"roll"</span>: {
+      <span class="hljs-string">"darken"</span>: {
+        <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">"value"</span>: <span class="hljs-number">25</span>
+      },
+      <span class="hljs-string">"enlighten"</span>: {
+        <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">"value"</span>: <span class="hljs-number">25</span>
+      },
+      <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"speed"</span>: {
+        <span class="hljs-string">"min"</span>: <span class="hljs-number">5</span>,
+        <span class="hljs-string">"max"</span>: <span class="hljs-number">15</span>
+      }
+    },
+    <span class="hljs-string">"wobble"</span>: {
+      <span class="hljs-string">"distance"</span>: <span class="hljs-number">30</span>,
+      <span class="hljs-string">"enable"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"speed"</span>: {
+        <span class="hljs-string">"min"</span>: -<span class="hljs-number">7</span>,
+        <span class="hljs-string">"max"</span>: <span class="hljs-number">7</span>
+      }
+    },
+    <span class="hljs-string">"shape"</span>: {
+      <span class="hljs-string">"type"</span>: [
+        <span class="hljs-string">"circle"</span>,
+        <span class="hljs-string">"square"</span>
+      ],
+      <span class="hljs-string">"options"</span>: {}
+    }
+  },
+  <span class="hljs-string">"responsive"</span>: [
+    {
+      <span class="hljs-string">"maxWidth"</span>: <span class="hljs-number">1024</span>,
+      <span class="hljs-string">"options"</span>: {
+        <span class="hljs-string">"particles"</span>: {
+          <span class="hljs-string">"move"</span>: {
+            <span class="hljs-string">"speed"</span>: {
+              <span class="hljs-string">"min"</span>: <span class="hljs-number">33</span>,
+              <span class="hljs-string">"max"</span>: <span class="hljs-number">66</span>
+            }
+          }
+        }
+      }
+    }
+  ]
+}
+      });</code></pre>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-9SEPo+fwJFpMUet/KACSwO+Z/dKMReF9q4zFhU/fT9M=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1784552607103901" crossorigin="anonymous" data-checked-head="true"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-1784552607103901&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1743212442&amp;plat=2%3A16777216%2C3%3A65536%2C4%3A65536%2C9%3A134250496%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fconfetti.js.org%2F&amp;pra=5&amp;wgl=1&amp;aihb=0&amp;asro=0&amp;ailel=1~2~4~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aiael=1~2~3~4~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aicel=33~38&amp;aifxl=29_18~30_19&amp;aiixl=29_5~30_6&amp;itsi=-1&amp;aiapm=0.15&amp;aiapmi=0.33938&amp;aiact=0.7&amp;ailct=0.6&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTM0LjAuNjk5OC4xNzgiLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMzQuMC42OTk4LjE3OCJdLFsiTm90OkEtQnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjEzNC4wLjY5OTguMTc4Il1dLDBd&amp;dt=1743276230602&amp;bpp=3&amp;bdt=584&amp;idt=130&amp;shv=r20250327&amp;mjsv=m202503250101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;eoidce=1&amp;nras=1&amp;correlator=6455168560465&amp;frm=20&amp;pv=2&amp;u_tz=60&amp;u_his=3&amp;u_h=1050&amp;u_w=1680&amp;u_ah=1010&amp;u_aw=1680&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=596&amp;bih=923&amp;scr_x=0&amp;scr_y=0&amp;eid=31091181%2C31091241%2C95344790%2C95356500%2C95356504%2C95355301%2C95356788%2C95356927&amp;oid=2&amp;pvsid=3098607408379965&amp;tmod=1889950969&amp;uas=0&amp;nvt=2&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1680%2C0%2C1680%2C1010%2C596%2C923&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=2.82&amp;td=1&amp;tdf=2&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=156" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins><script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.3/tsparticles.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" style="display: block; width: 100% !important; height: 79px !important; bottom: 0px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-anchor-shown="true" data-ad-status="filled"><div class="grippy-host"></div><div id="aswift_1_host" style="border: none !important; height: 74px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_1" name="aswift_1" style="width: 596px !important; height: 74px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="596" height="74" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://pagead2.googlesyndication.com/pagead/html/r20250327/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1784552607103901&amp;fa=1&amp;ifi=2&amp;uci=a!2" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CODoqoOCsIwDFVfpOwIdzo4bKw" data-load-complete="true"></iframe></div></ins><iframe src="https://ep2.adtrafficquality.google/sodar/sodar2/232/runner.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://pagead2.googlesyndication.com/pagead/html/r20250327/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar><chatgpt-sidebar-popups data-gpts-theme="light"></chatgpt-sidebar-popups></html>
